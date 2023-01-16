@@ -28,7 +28,7 @@ def matrix_transpose(js):
         prev_objects.extend(ids)
 
     result = pd.DataFrame(matrix, columns=object_to_id.keys(), index=object_to_id.keys())
-    result_t = result.T()
+    result_t = result.transpose()
     return result, result_t
 
 def mult(df1, df2):
